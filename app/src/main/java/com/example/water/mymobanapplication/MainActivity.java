@@ -10,6 +10,7 @@ import com.example.water.mymobanapplication.templateexample.MulitaryComputer;
 /**
  * 这样做的优点，封装不变部分，开一可以扩展可变部分
  * 固定结构：Asytask，主要可以看final
+ * test
  */
 public class MainActivity extends AppCompatActivity {
 
