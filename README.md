@@ -14,3 +14,4 @@ SimpleFactory里面就是提供创建接口的实例
 好处：客户端和模块的耦合度
 可以根据具体的情况产生具体的实现类
 应用场景bitmapFactory
+![image](https://github.com/caiyishui/waterArchitect/raw/简单工厂类结构示意图.png )
