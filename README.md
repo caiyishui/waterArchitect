@@ -26,9 +26,15 @@ SimpleFactory里面就是提供创建接口的实例
 定义：为子系统的一组接口提供一个一致的界面，Facade模式定义了一个高层接口-统一的界面
 facade包下面 是类的统一实现
 facadeApi包下面是接口实现类的外观
+
+
 优点：松散耦合 ，简单易用
 本质：封装交互，简化调用
+
+
 举例：Okhttp 缓j存框架，图片加载框架
+
+
 相关模式，中介者模式、单例组合
 ![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/facade_1.png)
 
