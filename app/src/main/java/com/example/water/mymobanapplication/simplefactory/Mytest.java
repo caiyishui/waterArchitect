@@ -8,5 +8,7 @@ public class Mytest {
     public static  void main(String[] args){
         Api api=SimpleFactory.creteApi(2);
         api.opration();
+//        api=AdvanceFactory.createApi();
+//        api.opration();
     }
 }

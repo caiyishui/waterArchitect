@@ -6,6 +6,12 @@ package com.example.water.mymobanapplication.simplefactory;
 
 public class SimpleFactory {
     /**
+     * 构造方法最好私有的
+     */
+    private SimpleFactory(){
+
+    }
+    /**
      * 提供一个创建对象的方法
      * 客户端和模块的耦合度
      *可以根据具体的情况产生具体的实现类应用场景bitmapFactory
