@@ -39,3 +39,37 @@ facadeApi包下面是接口实现类的外观
 ![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/facade_1.png)
 
 ![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/facade_2.png)
+
+
+4.适配器模式
+
+适配器模式：
+Adapter 适配器
+Target
+Adaptee
+Client
+Adapter将Adaptee适配成了Client需要的Target
+
+![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/adapter_1.png)
+
+Android 使用适配器
+
+Client : ListView（负责显示）
+Target : 数据（getCount、getView API方法）这个即使listview需要显示的数据
+Adaptee :  游标数据、Map数据、List数据、数组
+Adapter : CursorAdapter、SimpleAdapter、ArrayAdapter
+
+An Adapter object acts as a bridge between an {@link AdapterView} and the
+ * underlying data for that view.
+适配器对象是视图和数据之间的桥梁
+
+
+The Adapter provides access to the data items.
+The Adapter is also responsible for making a {@link android.view.View} for
+each item in the data set.
+
+适配器为每一个条目提供了获取数据的方法
+两个关键字：View Data （Client、Target）
+并不是拘泥于单纯的适配器模式类结构，而是对模式思想的一种特有的实现
+
+
