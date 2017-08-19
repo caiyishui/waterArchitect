@@ -97,6 +97,8 @@ each item in the data set.
 
 1.4以后出现的，这个作用，当instance 在其他线程有改变了，就会通知另外的线程
 但是这个关键字，这个会屏蔽掉虚拟机的一些代码优化。
+
+
 4.通过枚举的实例去调用
 在<Effective java><java 高效编程>提到枚举
 
