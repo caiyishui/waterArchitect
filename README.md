@@ -81,6 +81,9 @@ each item in the data set.
 （控制对象的个数）
 控制对象的个数
 
+![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/singleton.png)
+
+
 配置文件的（资源）
 
 1.懒汉式 --要用的时候采用问你有没有，能拖就拖 synchronized 有线程效率的问题
