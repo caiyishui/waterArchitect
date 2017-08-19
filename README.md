@@ -77,4 +77,27 @@ each item in the data set.
 代码复用
 缺点：让系统变的凌乱，加大了学习难度
 
+5.单例模式
+
+控制对象的个数
+
+配置文件的（资源）
+
+1.懒汉式 --要用的时候采用问你有没有，能拖就拖 synchronized 有线程效率的问题
+代码singletonlazy包下面
+2.饿汉式 --无法像构造传参，但是没有线程同步问题，和效率问题
+代码在singletonhungry
+3.双重检查 --在方法new的里面加对象的同步锁，并要在同步锁里面要加判断空。
+代码在singletonddoublecheck
+这个里面私有实例最好加上volatile这个关键点
+1.4以后出现的，这个作用，当instance 在其他线程有改变了，就会通知另外的线程
+但是这个关键字，这个会屏蔽掉虚拟机的一些代码优化。
+4.通过枚举的实例去调用
+在<Effective java><java 高效编程>提到枚举
+singletonenum
+下，通过枚举的实例直接去调用实现单例
+5.静态内部类的方式
+代码在singletondinnerclass
+既能做到延迟加载，又能实现线程安全
+
 
