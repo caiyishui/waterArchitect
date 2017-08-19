@@ -86,13 +86,13 @@ each item in the data set.
 
 配置文件的（资源）
 
-1.懒汉式 --要用的时候采用问你有没有，能拖就拖 synchronized 有线程效率的问题
+5.1.懒汉式 --要用的时候采用问你有没有，能拖就拖 synchronized 有线程效率的问题
 代码singletonlazy包下面
 
-2.饿汉式 --无法像构造传参，但是没有线程同步问题，和效率问题
+5.2.饿汉式 --无法像构造传参，但是没有线程同步问题，和效率问题
 代码在singletonhungry
 
-3.双重检查 --在方法new的里面加对象的同步锁，并要在同步锁里面要加判断空。
+5.3.双重检查 --在方法new的里面加对象的同步锁，并要在同步锁里面要加判断空。
 
 代码在singletonddoublecheck
 
@@ -102,16 +102,36 @@ each item in the data set.
 但是这个关键字，这个会屏蔽掉虚拟机的一些代码优化。
 
 
-4.通过枚举的实例去调用
+5.4.通过枚举的实例去调用
 在<Effective java><java 高效编程>提到枚举
 
 singletonenum
 下，通过枚举的实例直接去调用实现单例
 
-5.静态内部类的方式
+5.5.静态内部类的方式
 
 代码在singletondinnerclass
 
 既能做到延迟加载，又能实现线程安全
 
+
+6.工厂方法模式
+定义：定义一个创建对象的接口(Creator)，让子类决定实例化哪一个类(ConcreateCreator)，
+工厂方法使一个类的实例化延迟到创建器的子类中（ConcreteCreator）
+
+![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/factorymethod.png)
+
+工厂方法模式，比简单工厂扩展性更强
+
+包factoryfun
+
+安卓中：CursorFactory,LayoutInflater.Factory
+
+框架：做了部分工作，定义接口（jdbc）
+
+框架只完成一定功能
+
+导出数据的框架
+
+不确定的：要导出的什么文件不确定
 
