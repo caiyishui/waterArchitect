@@ -135,3 +135,20 @@ singletonenum
 
 不确定的：要导出的什么文件不确定
 
+7.抽象工厂模式（产品簇的问题，配套）
+
+抽象工厂的角色：
+
+AbstractFactory 抽象工厂
+ConcreateFactory 具体的工厂
+AbstractProduct 产品接口
+ConCreteProduct 具体的产品实现
+Client 客户端
+
+![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/abstactfactory.png)
+
+提供一系列相关或相互依赖对象的接口，而无须指定具体的类
+
+好的系统不是设计出来的，是迭代出来的
+
+
