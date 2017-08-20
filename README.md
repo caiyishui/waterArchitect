@@ -137,9 +137,11 @@ singletonenum
 
 7.抽象工厂模式（产品簇的问题，配套）
 
+生产一系列的有关系的产品
+
 抽象工厂的角色：
 
-AbstractFactory 抽象工厂
+AbstractFactory 抽象工厂y
 ConcreateFactory 具体的工厂
 AbstractProduct 产品接口
 ConCreteProduct 具体的产品实现
@@ -150,5 +152,11 @@ Client 客户端
 提供一系列相关或相互依赖对象的接口，而无须指定具体的类
 
 好的系统不是设计出来的，是迭代出来的
+
+应用场景：套餐 跨平台
+
+优点：切换产品簇方便，
+
+缺点：类层次过于复杂
 
 

@@ -1,4 +1,4 @@
-package com.example.water.mymobanapplication.abstractfactory.computerexample;
+package com.example.water.mymobanapplication.abstractfactory.computerexample2;
 
 /**
  * 装机工程师
@@ -21,11 +21,12 @@ public class ComputerEngineer {
      * @param
      */
     private void prepareHardwares(AbstractFactory schema)  {
-        CPUApi cpu=schema.createProductA();
-        MainboardApi mainboard=schema.createProductB();
+        CPUApi cpu=(CPUApi) schema.createProduct(1);
+        MainboardApi mainboard=(MainboardApi) schema.createProduct(2);
+        MemoryApi memoryApi=(MemoryApi) schema.createProduct(3);
         //测试配件
         cpu.calculate();
         mainboard.installCPU();
-
+        memoryApi.memorySave();
     }
 }
