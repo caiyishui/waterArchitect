@@ -163,6 +163,7 @@ Client 客户端
 
 定义：将复杂对象的构建与它表示进行分离，使得通过同样的构建过程，有不同的表示。
 
+![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/create.png)
 
 Builder 生成器接口，定义创建一个product对象所需的各个部件的操作
 ConcreateBuilder 具体的生成器实现。
