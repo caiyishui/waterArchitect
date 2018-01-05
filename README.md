@@ -192,3 +192,41 @@ concreatebuilder3使用静态内部类形式
 相关模式：
 
 Android应用： AlertDialog.Builder
+
+
+##9.原型模式
+
+
+
+
+
+
+
+##10中介者模式
+
+
+
+##11。代理模式
+
+定义：为其他对象提供一种代理以控制对这个对象访问。核心：控制访问的问题
+虚代理：根据需要来穿件开销很大的对象，该对象只有再需要的时候才会被真正创建和使用
+角色：
+Proxy：代理对象
+Subject： 目标接口
+RealSubject：具体的目标对象
+
+这里有个关系，就是代理对象，和具体的目标对象，实现的相同的目标接口，方便使用的人分不清是具体哪个对象，可以使用目标对象同样的方法
+注意代理对象需要，持有被代理对象的引用（虚代理）
+
+![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/jingtaidaili.png)
+
+举个例子
+用户类里面有很多的属性
+用户表
+如果有3个属性，
+
+如果常用的只有3个，其余的没有必要加载到内存中
+10000条
+类结构示意图
+
+![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/jtdaili-1.png)
