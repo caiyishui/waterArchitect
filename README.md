@@ -195,10 +195,28 @@ Android应用： AlertDialog.Builder
 
 
 ##9.原型模式
+Prototype
+
+定义：拷贝原型实例来指定创建对象的种类，并通过拷贝这些原型创建新的对象
+
+重点就是对象创建和拷贝
+
+Prototype 接口，声明一个克隆自身的接口，谁想克隆自己，实现该接口
+
+java中哪些克隆默认为浅克隆，要深克隆，需要自己实现深克隆
+
+克隆结合接口使用，new 必须指定实际类型，而克隆只需要接口即可
+
+优点：可对客户端隐藏具体的实现类型
+运行时动态改变具体的实现类型
+
+缺点：
+实现克隆方法
+
+使用场景：面向接口编程，通过原型就可以创建出对象
 
 
-
-
+![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/yuanxing.png)
 
 
 
