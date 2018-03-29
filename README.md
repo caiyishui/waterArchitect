@@ -294,3 +294,18 @@ RealSubject：具体的目标对象
 实现invoke方法，具体判断当前调用的是什么方法，然后进行相应的处理
 
 jdk1.3后，通过反射机制和和动态生成的技术，动态生成被代理的接口的实现对象
+
+
+
+#IOC  控制反转
+
+@Override
+@Target(ElementType.METHOD) 在方法上使用
+@Retention(RetentionPplicy.SOURCE)保留政策，源码级别，编译成class文件就不存在了
+确保方法的重写
+
+
+@Target(ElementType.TYPE) 在类上使用
+@Retention(RetentionPplicy.RUNTIME)再运行时使用
+
+##12 状态模式
