@@ -309,3 +309,13 @@ jdk1.3后，通过反射机制和和动态生成的技术，动态生成被代�
 @Retention(RetentionPplicy.RUNTIME)再运行时使用
 
 ##12 状态模式
+
+![image](https://github.com/caiyishui/waterArchitect/blob/master/raw/state.png)
+
+主要解決的问题是：状态太多，判断太多，很难维护
+这种思想主要解决了：
+优点：
+简化了逻辑控制
+分离了状态和行为，只需要关心状态的切换，而不需要关注切换之后的状态需要干什么
+显示化了状态的切换
+更好的扩展
